@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inscription</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="Projet_Taches.html">Projet &Taches</a>
+                <a href="Liste_Employes.html">Liste Employes</a>
+                <a href="Inscription.html">Inscription</a>
+            </nav>
+            <hr/>
+        </header>
+        <section >
+            <img align="center" src="images\img1.jpg" height="100%" width="50%" alt="banner">
+            <h1>   Inscription
+            <form>
+                <table>
+                <tr>
+                    <td>
+                        <label>Nom :</label></td>
+                        <td><input type="text" name="Nom" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Prenom :</label></td>
+                     <td><input type="text" name="prenom"required>
+                </tr>
+                <tr>
+                    <td><label>Email :</label></td>
+                    <td><input type="email" placeholder="contact@exemple.com" pattern=".+@gmail.com" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="telephone">Téléphone :</label></td>
+                    <td><input type="tel"  name="Telephone" pattern="[0-9]+" title="Veuillez entrer uniquement des chiffres" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date :</label></td>
+                    <td><input type="date"  name="date" min="2022-01-01" max="2025-12-31" pattern="\d{4}-\d{2}-\d{2}" title="Veuillez entrer une date au format YYYY-MM-DD" required></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="motDePasse">Mot de passe :</label></td>
+                    <td><input type="password" id="motDePasse" name="motDePasse" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Le mot de passe doit avoir au moins 8 caractères, inclure au moins une lettre et un chiffre" required></td>
+
+                </tr>
+                <tr>
+                    <td><input type="submit" value="s'inscrire">
+                </tr>
+            </table>
+    
+            </form>
+
+        </section>
+        <footer>
+            <hr/>
+            <p> vous pouvez nous contacter par email <a href="mailto:contact@gmail.tn">contact@gmail.tn</a></p>
+            <p>Adresse:Ghazela ,Tunis </p>
+            <hr/>
+        </footer>
+    </body>
+ </html>
